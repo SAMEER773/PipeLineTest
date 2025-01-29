@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/SANAKH/Desktop/RestAssured Framework/skillUpdateProject">
+        <classes>
+            <class name="p1.FirstPgm">
+
+            <methods>
+                <include name="firstPgm"/>
+            </methods>
+        </class>
+            <class name="p1.PrintNumber">
+                <methods>
+                    <include name="printNumber"/>
+                </methods>
+            </class>
+            <class name="p1.PrrintOddNumber">
+                <methods>
+                    <include name="printOddNumber"/>
+                </methods>
+            </class>
+
+            <class name="p1.PassArgs">
+                <methods>
+                    <include name="passArgs"/>
+                </methods>
+            </class>
+
+
+
+        </classes>
+    </test>
+</suite>
