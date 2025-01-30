@@ -24,7 +24,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean test  -DmyValue=10 -Dargs1=30 -Dargs2=50
+      run: mvn clean test  -DmyValue=${{ secrets.VALUE }} -Dargs1=${{ secrets.ARGS1 }}  -Dargs2={{ secrets.ARGS2 }}
 
 
 
