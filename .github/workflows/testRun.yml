@@ -8,7 +8,7 @@ on:
   pull_request:
     branches: [ "master" ]
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '30 0 * * *'
 
 jobs:
   build:
@@ -25,6 +25,9 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean test  -DmyValue="${{ secrets.VALUE }}" -Dargs1="${{ secrets.ARGS1 }}"  -Dargs2="{{ secrets.ARGS2 }}"
+      env :
+        VALUE_1 : "${{secerates.dev`}}"
+
 
 
 
