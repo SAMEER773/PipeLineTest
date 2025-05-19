@@ -26,6 +26,12 @@
                 </methods>
             </class>
 
+            <class name="p1.Pattern">
+                <methods>
+                    <include name="trigularPatter"/>
+                </methods>
+            </class>
+
 
 
         </classes>
